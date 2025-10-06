@@ -4,10 +4,16 @@ import { LightColors, DarkColors } from './color';
 
 export const CustomLightTheme = {
   ...MD3LightTheme,
-  colors: LightColors,
+  colors: {
+    ...MD3LightTheme.colors,
+    ...LightColors,
+  },
 };
 
 export const CustomDarkTheme = {
   ...MD3DarkTheme,
-  colors: DarkColors,
+  colors: {
+    ...MD3DarkTheme.colors,
+    ...DarkColors,
+  },
 };
